@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 16, 16);
+}
+#search-cont{
+    display: flex; 
+    justify-content: space-between; 
+    border-radius: 6px;
+    background-color: white;
+    width: 50%;
+    margin: 15px;
+}
+
+#input{
+    width: 92%;
+    padding: 0.6em 0.8em;
+    margin: 0.4em;
+    border: none;
+    font-size: larger;
+    border-style: hidden;
+}
+#search-btn{
+    padding: 0.6em 0.8em;
+    margin: 0.4em;
+    background-color: white;
+    border-style: hidden;
+    font-size: larger;
+    color: rgb(130, 129, 129);
+    cursor: pointer;
+}
+#logo{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color:rgb(255, 179, 37);
+    padding: 0.2em;
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+
+/*----Styling of suggestion list which is created and dispalyed using JS------*/
+
+
+#result{
+    width: 50%;
+    margin-left: 25.77em;
+    background-color: rgb(16, 16, 16);
+    border-radius: 5px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    list-style: none;
+    font-family: sans-serif;
+    
+}
+.lst-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(97, 95, 95);
+    cursor: pointer;
+}
+.lst-cont:hover{
+    background-color: rgb(41, 41, 41);
+}
+
+.fav{
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(255, 179, 37);
+    padding: 0.6em;
+    text-align: center;
+    font-weight: bolder;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.poster{
+    height: 4rem;
+    border: 1px solid white;
+    margin-right: 0.7em;
+    max-width: 46px;
+
+
+}
+.movieid{
+    display: none;
+}
+
+/*-----style movie page------*/
+
+
+#movie-cont{
+    line-height: 2.1em;
+    margin-top: 1.2rem;
+    border: 3px solid rgb(24, 23, 23);
+    width: 60%;
+    padding: 1.2em;
+    margin-left: 18rem;
+    background-color: #040404;
+    position: relative;
+
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size:1.6rem;
+}
+#year{
+    color: white;
+    font-size: medium;
+    font-weight: normal;
+}
+#poster{
+    border: 2px solid rgb(132, 72, 3);
+    margin-left: 18.6rem;
+    height: 23rem;
+}
+.commoninfo{
+    color: rgb(151, 148, 148);
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 18.6rem;
+}
+.plot{
+    color: rgb(172, 172, 172);
+    font-size: medium;
+    font-weight: lighter;
+}
+#type{
+    color: red;
+    font-size: 1.5rem;
+
+}
+.position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- favmovie page styling ----- */
+
+#fav-cont{
+    margin: 2.5rem;
+
+}
+#fav-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight:bold;
+}
+.fav-card{
+    border: 2px solid rgb(23, 23, 23);
+    background-color: rgb(10, 10, 10);
+    width: 20%;
+    height: 25rem;
+    padding: 0.7rem;
+    line-height: 2.1rem;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+#favposter{
+    border: 2px solid red;
+    height: 12.3rem;
+    margin-left: 3.7rem;
+}
+.delete{
+    width: 5.6rem;
+    color: white;
+    background-color: rgb(182, 44, 44);
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 0.16rem;
+    font-weight:normal;
+    cursor: pointer;
+    font-size: large;
+    margin-left: 5.2rem;
+}
+
+
+
