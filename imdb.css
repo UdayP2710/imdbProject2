@@ -11,7 +11,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(9, 9, 9);
+    border-bottom: 2px solid rgb(17, 17, 17);
 }
 #search-cont{
     display: flex; 
@@ -66,7 +67,6 @@ nav{
     padding: 1em;
     list-style: none;
     font-family: sans-serif;
-    
 }
 .lst-cont{
     display: flex;
@@ -131,9 +131,10 @@ nav{
     font-weight: normal;
 }
 #poster{
-    border: 2px solid rgb(132, 72, 3);
+    border: 2px solid rgb(0, 188, 3);
     margin-left: 18.6rem;
-    height: 23rem;
+    max-width: 17rem;
+    max-height: 29rem;
 }
 .commoninfo{
     color: rgb(151, 148, 148);
@@ -160,7 +161,12 @@ nav{
 /* ---- favmovie page styling ----- */
 
 #fav-cont{
+    padding: 2rem;
     margin: 2.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+    justify-content:center;
 
 }
 #fav-title{
@@ -173,16 +179,14 @@ nav{
 .fav-card{
     border: 2px solid rgb(23, 23, 23);
     background-color: rgb(10, 10, 10);
-    width: 20%;
-    height: 25rem;
+     width: 19vw; 
     padding: 0.7rem;
     line-height: 2.1rem;
-    margin-left: 40%;
-    margin-bottom: 20px;
+
 }
 #favposter{
     border: 2px solid red;
-    height: 12.3rem;
+    max-height: 12.3rem;
     margin-left: 3.7rem;
 }
 .delete{
@@ -197,6 +201,3 @@ nav{
     font-size: large;
     margin-left: 5.2rem;
 }
-
-
-

@@ -3,7 +3,9 @@ const movieinfo = JSON.parse(localStorage.getItem("movieinfo"));   // Converting
 localStorage.removeItem("movieinfo");
 displayMoviePage(movieinfo);
 
-// ----- Content Display Function inside Movie Page ---- //
+
+//  -----Content Display Function inside Movie Page----  //
+
 
 function displayMoviePage(movieobj)
 {
@@ -19,5 +21,4 @@ function displayMoviePage(movieobj)
     <p class="plot position">${movieobj.Plot}</p>
     <h4 id="type" class="position">${movieobj.Type}</h4>
     `
-
 }

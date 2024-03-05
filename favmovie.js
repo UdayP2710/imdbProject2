@@ -3,7 +3,9 @@ localStorage.setItem(`${favmovie.imdbID}`, JSON.stringify(favmovie));
 localStorage.removeItem("favmovie");
 let favcont = document.getElementById("fav-cont");
 
+
 startLoadingPage();
+
 
 
 function startLoadingPage(){
