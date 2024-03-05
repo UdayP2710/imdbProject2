@@ -29,7 +29,10 @@ async function fetchData(search, check, url) {
 
 // Adding keyup event listener to the search bar. when user release a key it will trigger fetchdata function......
 console.log(window.location.pathname);
-if (window.location.pathname === "/index.html") {
+if (
+  window.location.pathname === "/index.html" ||
+  window.location.pathname === "/imdbProject2/"
+) {
   inputtag.addEventListener("keyup", () => {
     resultcontainer.innerHTML = "";
     fetchData(inputtag.value, "keyup", "s");
